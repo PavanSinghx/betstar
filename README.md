@@ -22,5 +22,9 @@ $ ionic cordova platform add ios
 $ ionic cordova run ios
 ```
 
-Substitute ios for android if not on a Mac.
+Screen Shots:
+
+<img src="https://i.imgur.com/tXWAvOX.jpg"/>
+<img src="https://i.imgur.com/aKsvmrJ.jpg"/>
+<img src="https://i.imgur.com/kBysFCx.jpg"/>
 
