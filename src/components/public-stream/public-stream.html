@@ -1,0 +1,72 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+<ion-toolbar>
+  <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+    <ion-title>
+      BetStar
+    </ion-title>
+</ion-toolbar>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content #content>
+
+    <ion-list no-lines>
+        <ion-item *ngFor="let msg of listing; let i = index;">
+        <div class="chatBubble">
+            <img [ngClass]="getPos(i,msg)" src="{{msg.photoURL}}">
+            <div [ngClass]="getPos1(i,msg)">
+                <div class="message">{{msg.message}}</div>
+                <div class="message-detail">
+                    <span style="font-weight:bold;">{{msg.name}} </span>
+                </div>
+            </div>
+        </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+
+<ion-footer>
+  <ion-navbar color="primary">
+    <ion-input style="width:75%;color:#FFFFFF" class="colpl" type="text" [(ngModel)]="chatMessage.message" color="primary" placeholder="Enter your message">   </ion-input>
+    <ion-buttons style="width:20%" end>
+        <button ion-button color="light" outline (click)="sendMessage()">Send</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-footer>
+<!--<ion-content>
+    <ion-list>
+        <ion-item *ngFor ="let item of listing" inset>
+
+            <ion-item>
+                <ion-avatar item-start>
+                <img [src]="item.photoURL">
+                </ion-avatar>
+                <h2>{{item.name}}</h2>
+            </ion-item>
+
+            <ion-card-content>
+                <div>
+                {{item.message}}
+                </div>
+            </ion-card-content>      
+
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+
+<ion-footer>
+  <ion-navbar color="primary">
+    <ion-input style="width:75%;color:#FFFFFF"  type="text" [(ngModel)]="chatMessage.message" color="primary" placeholder="Enter your message">   </ion-input>
+    <ion-buttons end>
+        <button ion-button color="light" outline (click)="sendMessage()">Send</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-footer>-->

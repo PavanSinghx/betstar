@@ -1,0 +1,30 @@
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <ion-item color="primary">Update Profile</ion-item>
+
+    <img style="display: block;margin: auto;border-radius: 50%" src="{{filePath}}" alt="your image" height="200dp" width="200dp">
+    
+    <ion-list inset>
+
+      <button ion-button full (click) = "selectPhoto()">
+          <ion-label>Choose Profile Picture</ion-label>
+      </button>
+
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input name="name" type="text" [(ngModel)]="local_u"></ion-input>
+    </ion-item>
+
+      <button ion-button full (click) = "updateProfile()">
+          <ion-label>Update</ion-label>
+      </button>
+
+  </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-tabs [color]="'primary'">
+  <ion-tab tabTitle="Chat Room" [root]="tab1"></ion-tab>
+  <ion-tab tabTitle="Predictions" [root]="tab2"></ion-tab>
+</ion-tabs>

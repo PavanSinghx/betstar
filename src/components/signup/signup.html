@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Sign in
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+
+    <img style="display: block;margin: auto;border-radius: 50%" src="{{register.localPictureStorageURL}}" alt="your image" height="200dp" width="200dp">
+    
+    <ion-list inset>
+
+      <button ion-button full (click) = "selectPhoto()">
+          <ion-label>Choose Profile Picture</ion-label>
+      </button>
+
+    <ion-item>
+      <ion-input name="name" type="text" placeholder = "Username" [(ngModel)]="register.name"></ion-input>
+    </ion-item>
+
+      <button ion-button full (click) = "evt()">
+          <ion-label>Next</ion-label>
+      </button>
+
+  </ion-list>
+</ion-content>

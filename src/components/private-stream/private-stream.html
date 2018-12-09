@@ -1,0 +1,61 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+<ion-toolbar>
+  <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+    <ion-title>
+      BetStar
+    </ion-title>
+</ion-toolbar>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+            <ion-label>{{name}}</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-input name="pass" placeholder="Enter 4 digit code" type="number" [(ngModel)]="password.text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <button ion-button block (click) = "access()">
+                Access
+            </button>
+        </ion-item>
+        
+<ion-item></ion-item>
+    </ion-list>
+
+<div style="background-color:#AAABBB;padding: 10px 18px;border:5px">
+<h4>Not a Registered Predictions Room User?</h4><br>
+<h5>Follow the steps below to Subscribe and Register</h5><br>
+
+
+<h6>
+1. Go to Safaricom SIM Tool Kit, select M-PESA menu,<br><br>
+ select “Lipa na M-PESA“<br><br>
+2. Select “Pay Bill“<br><br>
+3. Select “Enter Business no.“, Enter 516606 and press “OK”<br><br>
+4. Select “Enter Account no.“, Enter BETSTAR and press “OK”<br><br>
+5. “Enter Amount“, Enter 500 and press “OK”<br><br>
+6. Enter your M-PESA PIN and press “OK”<br><br>
+7. Confirm all the details are correct and press “OK”<br><br>
+You will receive a confirmation SMS from M-PESA. Kindly
+SMS the Mpesa confirmation code (e.g. LFE35HK3O) to
+0707551645, and we will send you a password.
+Come back to this page and use the password above to log
+into the Predictions Room.
+</h6>
+</div>
+
+
+</ion-content>

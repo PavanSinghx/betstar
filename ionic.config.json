@@ -1,0 +1,7 @@
+{
+  "name": "cameratest",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

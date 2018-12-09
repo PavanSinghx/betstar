@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Predictions
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list>
+    <ion-item *ngFor="let item of predictions" color="item.color">
+      <ion-avatar item-end>
+        <img [src]="getImg(item)" />
+      </ion-avatar>
+      <h2>{{item.description}}</h2>
+      <h3>{{item.h1}}</h3>
+      <p>{{item.h2}}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

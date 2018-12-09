@@ -1,0 +1,35 @@
+<ion-content padding="true" class="has-header">
+
+  <ion-slides style="height: 50%">
+    <ion-slide>
+      <img id="user" src="assets/img/user.png" alt="your image">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/1.png" alt="your image">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/2.png" alt="your image">
+    </ion-slide>
+  </ion-slides>
+
+  <ion-list inset>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="login.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="login.password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+    <div padding>
+      <button ion-button color="primary" block (click)="signin()">Sign in</button>
+    </div>
+
+    <p style="text-align: center" (click)="reset()">Forgot Password</p>
+    <p style="text-align: center" (click)="signup()">Need an account</p>
+</ion-content>
